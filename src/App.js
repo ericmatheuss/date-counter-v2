@@ -57,13 +57,13 @@ function Counter() {
           <span>{date.toDateString()}</span>
         </p>
 
-        <div>
-          {(step !== 1 || count !== 0) && (
+        {(step !== 1 || count !== 0) && (
+          <div>
             <button type="reset" onClick={handleReset}>
               Reset
             </button>
-          )}
-        </div>
+          </div>
+        )}
       </div>
     </div>
   );
